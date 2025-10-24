@@ -6,8 +6,8 @@ import { StackImg } from "./Images";
 import { ScatteredImg } from "./Images";
 import { SiCss3, SiFacebook, SiGmail, SiHtml5, SiReact, SiTelegram, SiWhatsapp } from "react-icons/si";
 import {BiSolidPhoneCall } from "react-icons/bi";
-import calculator from "./assets/react.svg"
-import viewlogo from "./images/viewlogo.png"
+import calculator from "./assets/react.svg";
+import viewImg from "./images/viewlogo.png";
 
 export function IntroBar (){
     return(
@@ -145,7 +145,7 @@ export function Projects(){
             <div className="Projects">
                 <div className="ProjectCont">
                     <ProjectImg 
-                        src={viewlogo} 
+                        src={viewImg} 
                         width={230} 
                         height={170}
                         href={""}
