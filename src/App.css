@@ -1,0 +1,473 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+:root{
+    --first-color: #5000dc;
+    --second-color: #00ff88;
+    --third-color: rgb(219, 219, 219);
+    --fourth-color: rgba(44, 44, 44, 0.842);
+    --fifth-color: black;
+    --sixth-color: white;
+}
+body{
+    background-color: var(--fifth-color);
+    margin: 0;
+    padding: 10px;
+}
+.IntroBar{
+    background-color: var(--fourth-color);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    justify-self: center;
+    padding: 0 10px;
+    border-radius: 20px;
+    box-shadow: 0 1px 9px var(--second-color);
+    position: sticky;
+    top: 20px;
+    margin: 0;
+    opacity: 0.9;
+    z-index: 100;
+    gap: 10px;
+}
+.IntroImg{
+    border-radius: 50%;
+    margin-top: 15px;
+}
+.Introh2{
+    color: var(--sixth-color);
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+.Icons{
+    font-size: 1.3em;
+    transition: transform 0.3s linear;
+}
+.Icons:hover{
+    transform: scale(1.2) rotate(15deg);
+}
+.Icons:active{
+    box-shadow: 0 0 9px var(--fifth-color);
+    transform: scale(1.1) rotate(20deg);
+}
+.SocialIcons{
+    display: flex;
+    gap: 0.7em;
+    width: fit-content;
+    height: fit-content;
+}
+.AboutMe{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    position: relative;
+    top: 0;
+    flex-direction: column;
+}
+.React{
+    color: rgba(112, 215, 243, 0.384);
+    font-size: 2em;
+    font-weight: bolder;
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 0;
+}
+.Html{
+    color: rgba(255, 166, 0, 0.39);
+    font-size: 2em;
+    font-weight: bolder;
+    position: fixed;
+    top: 110px;
+    right: 130px;
+    z-index: 0;
+    animation-name: wiggle;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.Css{
+    color: rgba(0, 0, 255, 0.342);
+    font-size: 1.6em;
+    font-weight: bolder;
+    position: fixed;
+    top: 250px;
+    right: 50px;
+    z-index: 0;
+    animation-name: beat;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes beat {
+    0%{
+        transform: scale(1.5)
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+@keyframes wiggle {
+    0%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+@keyframes rotate {
+    1%{
+        transition: transform 0.3s;
+        transform: rotate(0deg) scale(1.5);
+    }
+    50%{
+        transition: transform 0.3s;
+        transform: rotate(180deg) scale(0.9);
+    }
+    100%{
+        transition: transform 0.3s;
+        transform: rotate(360deg) scale(1.5) ;
+    }
+}
+.Info{
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px;
+    background-color: none;
+    z-index: 10;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    padding: 3px;
+}
+.InfoTxt{
+    width: 70%;
+    height: fit-content;
+}
+.Stack{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    border-radius: 5px;
+}
+.StackRoll{ 
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    gap: 15px;
+}
+.StackIcn{
+    width: fit-content;
+    height: 35px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px var(--second-color);
+    background-color: var(--fourth-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+.StackName{
+    font-size: 0.9em;
+    color: var(--second-color);
+}
+.StackIcn:hover{
+    transform: scale(1.05);
+}
+@keyframes scroll {
+    from{
+        transform: translateX(90%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.AboutInfo{
+    width: 100%;
+    height: fit-content;
+    padding: 11px 6px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, fit-content);
+    gap: 9px;
+    box-shadow: 0 0 5px var(--second-color);
+    border-radius: 20px;
+}
+.AboutArt1{
+    width: 100%;
+    height: fit-content;
+    padding: 5px 20px;
+    border-radius: 8px;
+    border-right: 1px solid var(--second-color);
+    grid-column: 1/1;
+    grid-row: 1/2;
+    animation-name: moveRight;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: box-shadow 1s linear;
+}
+.AboutArt2{
+    width: 100%;
+    height: fit-content;
+    padding: 5px 20px;
+    border-radius: 8px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    border-left: 1px solid var(--second-color);
+    animation-name: moveLeft;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: box-shadow 0.3s ease;
+}
+.Scattered{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 3/3;
+}
+.AboutTxt{
+    font-size: 1em;
+    color: var(--sixth-color);
+    line-height: 2em;
+}
+@keyframes moveRight {
+    0%{
+        transform: scale(1);
+        box-shadow: 0 0 1px var(--second-color);
+    }
+    25%{
+        transform: scale(0.9);
+        box-shadow: 0 0 10px var(--second-color);
+    }
+    50%{
+        transform: scale(1);
+        box-shadow: 0 0 1px var(--second-color);
+    }
+    75%{
+        transform: scale(0.9);
+        box-shadow: 0 0 10px var(--second-color);
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: 0 0 1px var(--second-color);
+    }
+}
+@keyframes moveLeft {
+    0%{
+        transform: scale(0.9);
+        box-shadow: 0 0 1px var(--second-color);
+    }
+    25%{
+        transform: scale(1);
+        box-shadow: 0 0 10px var(--second-color);
+    }
+    50%{
+        transform: scale(0.9);
+        box-shadow: 0 0 1px var(--second-color);
+    }
+    75%{
+        transform: scale(1);
+        box-shadow: 0 0 10px var(--second-color);
+    }
+    100%{
+        transform: scale(0.9);
+        box-shadow: 0 0 1px var(--second-color);
+    }
+}
+.Footer{
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    padding: 7px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--second-color);
+    position: relative;
+    opacity: 0.9;
+}
+.ContactIcn{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+.ContactTxt{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+    justify-content: center;
+    color: var(--sixth-color);
+    line-height: 20px;
+}
+.Contact{
+    width: fit-content;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    gap: 10px;
+    margin-top: 50px;
+    padding: 0 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px var(--second-color);
+}
+.Projects{
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.ProjectCont{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.ProjectImg{
+    border-radius: 20px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+.ProjectDemo{
+    width: 100%;
+    height: fit-content;
+    padding: 15px 20px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 15px;
+    background-color: none;
+    box-shadow: 0 0 5px var(--second-color);
+    border-radius: 20px;
+}
+.Desc{
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 8px;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px var(--sixth-color);
+}
+.ProjectInfo{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+.TechStack{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+}
+.Txt{
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    box-shadow: 0 0 2px var(--sixth-color);
+    border-radius: 15px;
+}
+.Icns{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+.DemoBtn{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    align-items: center;
+    border: none;
+    padding: 10px ;
+    border-radius: 10px;
+    background-color: var(--fifth-color);
+    color: var(--sixth-color);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+    box-shadow: 0 2px 7px 1px grey;
+}
+.DemoBtn:active{
+    transform: scale(0.9);
+    transition: transform 0.4s linear;
+}
+.DemoBtn:hover{
+    background-color: var(--fourth-color);
+}
