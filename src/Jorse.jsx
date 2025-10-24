@@ -7,7 +7,7 @@ import { ScatteredImg } from "./Images";
 import { SiCss3, SiFacebook, SiGmail, SiHtml5, SiReact, SiTelegram, SiWhatsapp } from "react-icons/si";
 import {BiSolidPhoneCall } from "react-icons/bi";
 import calculator from "./assets/react.svg";
-import viewImg from "./images/viewlogo.png";
+import viewImg from "./images/viewimg.png";
 
 export function IntroBar (){
     return(
