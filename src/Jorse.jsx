@@ -6,6 +6,8 @@ import { StackImg } from "./Images";
 import { ScatteredImg } from "./Images";
 import { SiCss3, SiFacebook, SiGmail, SiHtml5, SiReact, SiTelegram, SiWhatsapp } from "react-icons/si";
 import {BiSolidPhoneCall } from "react-icons/bi";
+import calculator from "./assets/react.svg"
+import viewlogo from "./Images/viewlogo.png"
 
 export function IntroBar (){
     return(
@@ -143,9 +145,9 @@ export function Projects(){
             <div className="Projects">
                 <div className="ProjectCont">
                     <ProjectImg 
-                        src={"src/images/View-Img.png"} 
-                        width={300} 
-                        height={150}
+                        src={viewlogo} 
+                        width={230} 
+                        height={170}
                         href={""}
                         name={"View"}
                         info={"A free, interesting, entertaining movie app focused on giving free movies to users to keep those who can't afford to buy movies."}
@@ -156,11 +158,11 @@ export function Projects(){
                         }
                     />
                     <ProjectImg 
-                     src={"src/assets/react.svg"}
+                     src={calculator}
                      width={100}
                      height={100}
                      name={"Jorse Calculator"}
-                     info={"Simple but effective free calcuulator"}
+                     info={"Simple but effective free calculator"}
                      href={"https://jorse-calculator.vercel.app/"}
                      />
                 </div>

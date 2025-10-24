@@ -2,10 +2,11 @@ import React from "react";
 import {FaCircle, FaCode, FaPalette, FaUpload, FaUserCircle} from "react-icons/fa";
 import { FaShareFromSquare } from "react-icons/fa6";
 import { SiCss3, SiFacebook, SiGit, SiGithub, SiHtml5, SiJavascript, SiLinkedin, SiPython, SiReact, SiWhatsapp } from "react-icons/si";
+import mypic from "./images/jorsedev.jpg"
 export function Image({size}) {
     return(
         <img 
-            src="src/images/JorseDev - Copy.jpg" 
+            src={mypic} 
             alt="My Image" 
             width={size}
             height={size}
