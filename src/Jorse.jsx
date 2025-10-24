@@ -88,6 +88,10 @@ export function Footer (){
                 </div>
             <div className="Footer">
 
+            <div className="ContactTxt">
+                    <p style={{fontSize: "0.9em"}}>For collaborations and hiring <br /> I'm Just a call or chat away</p>
+                </div>
+                
                 <div className="ContactIcn">
                     <a 
                         href="https://wa.me/+2349038323262" 
@@ -125,9 +129,7 @@ export function Footer (){
                      </a>
                 </div>
 
-                <div className="ContactTxt">
-                    <p style={{fontSize: "0.9em"}}>For collaborations and hiring <br /> I'm Just a call or chat away</p>
-                </div>
+                
             </div>
         </>
     )
@@ -150,7 +152,7 @@ export function Projects(){
                         height={170}
                         href={""}
                         name={"View"}
-                        info={"A free, interesting, entertaining movie app focused on giving free movies to users to keep those who can't afford to buy movies."}
+                        info={"A free, interesting, entertaining movie app focused on giving free movies to users who can't afford to buy movies."}
                         warning={
                             <p style={{color: "red", boxShadow: '0 0 5px white', display: "flex", width: "fit-content", padding: "5px", borderRadius: "9px", fontSize: "0.7em", alignItems: "center", gap: "8px"}}>
                                 <FaTools color="red" className="Icons"/> Still Building

@@ -313,7 +313,7 @@ body{
     }
 }
 .Footer{
-    width: 70%;
+    width: 90%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -334,8 +334,9 @@ body{
     display: flex;
     height: fit-content;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 25px;
     padding: 5px;
 }
 .ContactTxt{
@@ -454,6 +455,7 @@ body{
     flex-direction: row;
     gap: 7px;
     align-items: center;
+    justify-content: center;
     border: none;
     padding: 10px ;
     border-radius: 10px;
@@ -463,6 +465,19 @@ body{
     cursor: pointer;
     transition: background-color 0.3s linear;
     box-shadow: 0 2px 7px 1px grey;
+}
+@media (max-width: 500px) {
+    .DemoBtn{
+        width: 100%;
+    }
+}
+@media (min-width: 510px) and (max-width: 900px){
+    .DemoBtn{
+        width: 80%;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
 }
 .DemoBtn:active{
     transform: scale(0.9);
