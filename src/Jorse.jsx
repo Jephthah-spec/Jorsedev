@@ -116,7 +116,7 @@ export function Footer (){
                             style={{color: "#0088cc"}}
                         />
                      </a>
-                     <a href="mailto:jephthahordu@gmail.com?subject=Job%20Application&body=Hello,%20I%20am%20ready%20to%20be%20for%20any%20Front%20End%20Developer%20job" 
+                     <a href="mailto:jephthahordu@gmail.com?subject=Job%20Application&body=Hello,%20I%20am%20ready20for%20any%20Front%20End%20Developer%20job" 
                      target="_blank"
                      rel="noopener noreferrer">
                         <SiGmail  
