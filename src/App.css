@@ -479,10 +479,26 @@ body{
         justify-self: center;
     }
 }
+@media(min-width: 900px){
+    .ProjectCont{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .DemoBtn{
+        width: 80%;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+}
 .DemoBtn:active{
     transform: scale(0.9);
     transition: transform 0.4s linear;
 }
 .DemoBtn:hover{
     background-color: var(--fourth-color);
+}
+.shoe{
+    color: var(--second-color);
 }

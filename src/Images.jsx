@@ -14,7 +14,7 @@ export function Image({size}) {
         />
     )
 }
-export function ProjectImg({src, width, height, name, info, href, warning}) {
+export function ProjectImg({src, width, height, name, info, href, warning, techstack}) {
     return(
         
         <div className="ProjectDemo">
@@ -45,21 +45,7 @@ export function ProjectImg({src, width, height, name, info, href, warning}) {
                     <FaCode style={{color: "white"}}/> 
                     <p style={{color: "white", fontSize: "0.8em"}}>TECH STACK</p>
                 </div>
-
-                <div className="Icns">
-                    <div className="StackIcn">
-                        <SiReact 
-                            style={{color: "rgb(11, 170, 214)", fontSize: "1.2em"}}
-                        />
-                        <p className="StackName">React</p>
-                    </div>
-                    <div className="StackIcn">
-                        <SiJavascript
-                            style={{color: "red", fontSize: "1.2em"}}
-                        />  
-                        <p className="StackName">Javascript</p>
-                    </div>
-                </div>
+                {techstack}
             </div>
             <a href={href} target="_self" rel="noopener noreferrer" style={{textDecoration: "none"}}>
                 <button className="DemoBtn">
