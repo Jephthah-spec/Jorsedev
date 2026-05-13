@@ -1,8 +1,8 @@
 import React from "react";
 import { FaCode, FaPalette} from "react-icons/fa";
 import { FaShareFromSquare } from "react-icons/fa6";
-import { SiCss3, SiFacebook, SiGit, SiGithub, SiHtml5, SiJavascript, SiLinkedin, SiPython, SiReact, SiWhatsapp } from "react-icons/si";
-import mypic from "./images/jorsedev.jpg"
+import { SiCss3, SiFacebook, SiGit, SiGithub, SiHtml5, SiI18Next, SiJavascript, SiLinkedin, SiNextdotjs, SiPython, SiReact, SiTailwindcss, SiTypescript, SiWhatsapp } from "react-icons/si";
+import mypic from "./images/port me.png"
 export function Image({size}) {
     return(
         <img 
@@ -29,11 +29,11 @@ export function ProjectImg({src, width, height, name, info, href, warning, techs
             className="ProjectImg"
             />
             <div className="Desc">
-                <FaPalette color=" #00ff88" fontSize="1em"/>
+                <FaPalette color=" black" fontSize="1em"/>
                 <p className="AboutTxt">Web App</p>
             </div>
             <div className="ProjectInfo">
-                <h3 style={{color: " #00ff88", fontSize: "1.3em"}}>
+                <h3 style={{color: " black", fontSize: "1.3em"}}>
                     {name}
                 </h3>
                 <p className="AboutTxt">
@@ -42,8 +42,8 @@ export function ProjectImg({src, width, height, name, info, href, warning, techs
             </div>
             <div className="TechStack">
                 <div className="Txt">
-                    <FaCode style={{color: "white"}}/> 
-                    <p style={{color: "white", fontSize: "0.8em"}}>TECH STACK</p>
+                    <FaCode style={{color: "black"}}/> 
+                    <p style={{color: "black", fontSize: "0.8em"}}>TECH STACK</p>
                 </div>
                 {techstack}
             </div>
@@ -110,42 +110,63 @@ export function StackImg() {
                     />
                     <p className="StackName">Html5</p>
                 </div>
+
                 <div className="StackIcn">
                     <SiCss3
                         style={{color: "blue", fontSize: "1.2em"}}
                     />  
                     <p className="StackName">Css3</p>
                 </div>
+
                 <div className="StackIcn">
                     <SiReact 
                         style={{color: "rgb(11, 170, 214)", fontSize: "1.2em"}}
                     />
                     <p className="StackName">React</p>
                 </div>
+
                 <div className="StackIcn">
                     <SiJavascript
                         style={{color: "red", fontSize: "1.2em"}}
                     />  
                     <p className="StackName">Javascript</p>
                 </div>
+
                 <div className="StackIcn">
                     <SiGit
                         style={{color: "rgb(235, 98, 56)", fontSize: "1.2em"}}
                     />  
                     <p className="StackName">Git</p>
                 </div>
+
                 <div className="StackIcn">
                     <SiGithub
                         style={{color: "white", fontSize: "1.2em"}}
                     />  
                     <p className="StackName">Github</p>
                 </div>
+
                 <div className="StackIcn">
-                    <SiPython
+                    <SiTailwindcss
+                        style={{color: "cyan", fontSize: "1.2em"}}
+                    />  
+                    <p className="StackName">TailWind</p>
+                </div>
+
+                <div className="StackIcn">
+                    <SiNextdotjs
                         style={{color: "#306998", fontSize: "1.2em"}}
                     />  
-                    <p className="StackName">Python</p>
+                    <p className="StackName">Next.Js</p>
                 </div>
+
+                <div className="StackIcn">
+                    <SiTypescript
+                        style={{color: "#306998", fontSize: "1.2em"}}
+                    />  
+                    <p className="StackName">Typescript</p>
+                </div>
+                
                </div>
             </div>
         </>
@@ -156,13 +177,15 @@ export function ScatteredImg() {
     return(
         <>
             <div className="Scattered">
-                <SiHtml5 style={{color: "orange", fontSize: "1.6em"}}/>
-                <SiCss3 style={{color: "blue", fontSize: "1.6em"}}/>
-                <SiJavascript style={{color: "red", fontSize: "1.6em"}}/>
-                <SiReact style={{color: "rgb(11, 170, 214)", fontSize: "1.6em"}}/>
-                <SiGit style={{color: "rgb(235, 98, 56)", fontSize: "1.6em"}}/>
-                <SiGithub style={{color: "white", fontSize: "1.6em"}}/>
-                <SiPython style={{color: "#306998", fontSize: "1.6em"}}/>  
+                <SiHtml5 style={{color: "orange", fontSize: "1.4em"}}/>
+                <SiCss3 style={{color: "blue", fontSize: "1.4em"}}/>
+                <SiJavascript style={{color: "red", fontSize: "1.4em"}}/>
+                <SiReact style={{color: "rgb(11, 170, 214)", fontSize: "1.4em"}}/>
+                <SiGit style={{color: "rgb(235, 98, 56)", fontSize: "1.4em"}}/>
+                <SiGithub style={{color: "black", fontSize: "1.6em"}}/>
+                <SiTailwindcss style={{color: "cyan", fontSize: "1.4em"}}/>  
+                <SiNextdotjs style={{color: "#306998", fontSize: "1.4em"}} />
+                <SiTypescript style={{color: "#306998", fontSize: "1.4em"}} />
             </div>
         </>
     )

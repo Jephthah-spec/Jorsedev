@@ -39,7 +39,7 @@ export function Body (){
                     size={100} 
                 />
                <span className="InfoTxt">
-                    <h2 style={{color: " #00ff88"}}>Hi, I'm Ordu Jephthah <br /> Front-End Developer</h2>
+                    <h2 style={{color: "rgba(44, 44, 44, 0.842)"}}>Hi, I'm Ordu Jephthah <br /> Front-End Developer</h2>
 
                     <p className="AboutTxt">Creative and fast learning developer focused on writing clean code and building user-friendly experiences.</p>
 
@@ -52,8 +52,8 @@ export function Body (){
 
         <div className="AboutInfo">
             <article className="AboutArt1">
-            <h3 style={{display: "flex", gap: "15px",  alignItems: "center", fontSize: "1.1em", color: "white"}}>
-                <FaAddressBook style={{color: " #00ff88", fontSize: "1.7em"}}/>
+            <h3 style={{display: "flex", gap: "15px",  alignItems: "center", fontSize: "1.1em", color: "black"}}>
+                <FaAddressBook style={{color: " black", fontSize: "1.7em"}}/>
                 About Me
             </h3>
             <p className="AboutTxt">
@@ -62,8 +62,8 @@ export function Body (){
             </article>
 
             <article className="AboutArt2">
-                <h3 style={{display: "flex", gap: "15px", alignItems: "center", color: "white"}}>
-                    <FaToolbox style={{color: " #00ff88", fontSize: "1.4em"}}/>
+                <h3 style={{display: "flex", gap: "15px", alignItems: "center", color: "black"}}>
+                    <FaToolbox style={{color: " black", fontSize: "1.4em"}}/>
                     Skills
                 </h3>
                 <p className="AboutTxt">
@@ -83,9 +83,9 @@ export function Footer (){
         <div className="Contact">
                     <BiSolidPhoneCall
                         className="Icons"
-                        style={{color: "white", fontSize: "0.9em"}}
+                        style={{color: "black", fontSize: "0.9em"}}
                     />
-                    <p style={{fontSize: "0.7em", color: "white"}}>Contact Me</p>
+                    <p style={{fontSize: "0.7em", color: "black"}}>Contact Me</p>
                 </div>
             <div className="Footer">
 
@@ -141,9 +141,9 @@ export function Projects(){
         <div className="Contact">
             <FaCode
                 className="Icons"
-                style={{color: "white", fontSize: "1em"}}
+                style={{color: "black", fontSize: "1em"}}
             />
-            <p style={{fontSize: "0.7em", color: "white"}}>Projects</p>
+            <p style={{fontSize: "0.7em", color: "black"}}>Projects</p>
         </div>
         <div className="Projects">
             <div className="ProjectCont">
@@ -155,7 +155,7 @@ export function Projects(){
                     name={"View"}
                     info={"A free, interesting, entertaining movie app focused on giving free movies to users who can't afford to buy movies."}
                     warning={
-                        <p style={{color: "red", boxShadow: '0 0 5px white', display: "flex", width: "fit-content", padding: "5px", borderRadius: "9px", fontSize: "0.7em", alignItems: "center", gap: "8px"}}>
+                        <p style={{color: "red", boxShadow: '0 0 5px grey', display: "flex", width: "fit-content", padding: "5px", borderRadius: "9px", fontSize: "0.7em", alignItems: "center", gap: "8px"}}>
                             <FaTools color="red" className="Icons"/> Still Building
                         </p>
                         }
@@ -206,7 +206,7 @@ export function Projects(){
                      height={100}
                      name={"Cocoyam Marketplace"}
                      info={"An online marketplace where farmers sell their farm produce directly to consumers"}
-                     href={""}
+                     href={"https://cocoyam-marketplace.vercel.app"}
                      techstack={
                         <div className="Icns">
                             <div className="StackIcn">
@@ -309,7 +309,7 @@ export function Chat() {
         setTimeout(()=>{
             alert(`You sent ${message} to ${to}`)
             setMessage("")
-        }, 10000)
+        }, 5000)
     }
 
     return(
@@ -321,8 +321,8 @@ export function Chat() {
                         value={to}
                         onChange={e => setTo(e.target.value)}
                     >
-                        <option value="Alice">Alice</option>
-                        <option value="Jephthah">Jephthah</option>
+                        <option value="Favour">Favour</option>
+                        <option value="Thelma">Thelma</option>
                     </select>
                 </label>
 
@@ -337,6 +337,33 @@ export function Chat() {
         </div>
     )
 }
+
+export function Navbar() {
+    const [show, setShow] = useState(false)
+
+    const Toggle = () =>{
+        setShow(!show)
+    }
+    
+
+    return(
+        <div>
+            <button onClick={Toggle}>{show ? "Hide" : "Show"} Navbar</button>
+
+            {show && 
+            <div>
+                <ul style={{
+                    color: "white"
+                }}>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Support</li>
+                </ul>
+            </div>}
+        </div>
+    )
+}
 export default function Jorse() {
     return(
         <>
@@ -344,12 +371,7 @@ export default function Jorse() {
             <Body />
             <Projects />
             <Footer />
-            <Practice
-             onClick={()=>alert("Clilcked, and playing")}
-             onPlay={()=>alert("Actively playing")}
-             />
-             <ImageCarousel />
-             <Chat />
+            
         </>
     )
 }

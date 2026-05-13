@@ -5,19 +5,19 @@
 }
 :root{
     --first-color: #5000dc;
-    --second-color: #00ff88;
-    --third-color: rgb(219, 219, 219);
-    --fourth-color: rgba(44, 44, 44, 0.842);
-    --fifth-color: black;
-    --sixth-color: white;
+    --second-color: rgba(44, 44, 44, 0.842);
+    --third-color: rgba(44, 44, 44, 0.842);
+    --fourth-color: rgba(139, 133, 133, 0.842);
+    --fifth-color: white;
+    --sixth-color:black;
 }
 body{
     background-color: var(--fifth-color);
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
 .IntroBar{
-    background-color: var(--fourth-color);
+    background-color: var(--third-color);
     width: 100%;
     height: fit-content;
     display: flex;
@@ -28,7 +28,6 @@ body{
     justify-self: center;
     padding: 0 10px;
     border-radius: 20px;
-    box-shadow: 0 1px 9px var(--second-color);
     position: sticky;
     top: 20px;
     margin: 0;
@@ -41,7 +40,7 @@ body{
     margin-top: 15px;
 }
 .Introh2{
-    color: var(--sixth-color);
+    color: var(--fifth-color);
     font-weight: bolder;
     font-size: 1.1em;
 }
@@ -69,6 +68,7 @@ body{
     position: relative;
     top: 0;
     flex-direction: column;
+    
 }
 .React{
     color: rgba(112, 215, 243, 0.384);
@@ -187,8 +187,7 @@ body{
     height: 35px;
     padding: 10px;
     border-radius: 7px;
-    box-shadow: 0 0 5px var(--second-color);
-    background-color: var(--fourth-color);
+    background-color: var(--third-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -198,7 +197,7 @@ body{
 }
 .StackName{
     font-size: 0.9em;
-    color: var(--second-color);
+    color: var(--fifth-color);
 }
 .StackIcn:hover{
     transform: scale(1.05);
@@ -212,9 +211,10 @@ body{
     }
 }
 .AboutInfo{
-    width: 100%;
+    width: 97%;
     height: fit-content;
     padding: 11px 6px;
+    margin: 10px;
     margin-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -408,7 +408,7 @@ body{
     padding: 5px 8px;
     gap: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 3px var(--sixth-color);
+    box-shadow: 0 0 5px var(--third-color);
 }
 .ProjectInfo{
     width: 90%;
